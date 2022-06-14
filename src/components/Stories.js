@@ -22,7 +22,7 @@ const Stories = () => {
         fetchApiData(API);
     },[])
   return (
-    <div>Stories {data}</div>
+    <div>Stories</div>
   )
 }
 
