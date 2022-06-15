@@ -1,17 +1,16 @@
-import React from 'react'
-import Stories from './components/Stories'
-import { useGlobalHook } from './context';
+import Pagination from "./components/Pagination";
+import Search from "./components/Search";
+import Stories from "./components/Stories";
+import "./App.css";
 
 const App = () => {
-
-  // let data = useContext(AppContext);
-  let data = useGlobalHook();
   return (
     <>
-      {data}
-      <Stories/>
+      <Search />
+      <Pagination />
+      <Stories />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
